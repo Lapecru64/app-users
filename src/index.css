@@ -1,0 +1,75 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: violet;
+}
+
+.app {
+  color: brown;
+}
+
+.app__button {
+  background-color: rgb(0, 153, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 20px;
+}
+
+.user-card {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  color: brown;
+  border: 1px solid gray;
+}
+
+.user-modal {
+  background-color: rgb(150, 130, 238);
+  padding: 15px;
+  border-radius: 10px;
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+}
+
+.user-form__field {
+  margin-bottom: 1rem;
+}
+
+.user-form__input[type="date"] {
+  appearance: none;
+  background: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png") no-repeat right center;
+  padding-right: 16px;
+}
+
+.user-card__delete-button {
+  background-color: red;
+}
+
+.delete-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
