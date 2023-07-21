@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: violet;
@@ -20,7 +21,6 @@ body {
 
 .user-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 20px;
 }
@@ -73,3 +73,27 @@ body {
   cursor: pointer;
 }
 
+/* Estilos para tablets y teléfonos móviles */
+@media (max-width: 768px) {
+  .user-list {
+    grid-template-columns: 1fr;
+  }
+
+  .app__button {
+    position: static;
+    margin: 1em auto;
+  }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 769px) {
+  .user-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
